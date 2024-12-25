@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pesquisa {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pesquisa:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.botao {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+.qrcode {
+    display: none;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcode.active {
+    display: flex; /* Torna o contêiner visível quando a classe 'active' é aplicada */
+}
+
+.qrcode img {
+    width: 200px; /* Define um tamanho fixo para o QR Code */
+    height: 200px; /* Define um tamanho fixo para o QR Code */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    object-fit: contain; /* Garante que a imagem se ajuste bem ao espaço */
+}
