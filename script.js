@@ -10,7 +10,7 @@ function gerador(){
         pesquisa.focus()
         return
     }
-    qrcode.src = `https:api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`
+    qrcode.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`
     qrcode.addEventListener('load', () => {
         qrcodeContainer.classList.add('active')
     })
